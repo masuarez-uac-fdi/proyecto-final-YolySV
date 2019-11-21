@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">  
+    <link href="Styles/TareaDW.css" rel="stylesheet" type="text/css">
+    <title>Mujeres en el STEM</title>
+    <style type="text/css">
+      address{
+        font-size: 1em;
+        margin: 1em;
+        text-align: right;
+      }
+    </style>
+  </head>
+  
+  <body>
+  	<h1 style="font-size: 50px;text-align: center";> Porque no todas las niñas quieren ser princesas</h1>
+    <h2></h2>
+    <img class="Imagen" src="Images/MujerCT.jpg" alt="No se ha podido cargar la imagen">
+    <h2></h2>
+<script type="text/javascript">
+  function MensajeDN(){
+               alert("Al hacer click en este enlace, serás redirigido a otra página nuestra")
+            }
+</script>
+
+<ul class='menu'>
+  <li><a href=>¿Qué es el "STEM"?</a></li>    
+  <li><a href=>Grandes mujeres en las áreas STEM</a></li>
+  <li><a onclick="MensajeDN()" href='TareaDW2.html'>Las niñas y el STEM en México</a></li>
+  <li><a onclick="MensajeDN()" href='DWBD.php'>Nuestros datos</a></li>
+  <li class='dropdown'><span>Nuestras redes &#9662;</span>
+    <ul style="font-size: 80%" class='features-menu'>   
+      <li><a href='#'>Facebook</a></li>
+      <li><a href='#'>Instagram</a></li>
+      <li><a href='#'>Twitter</a></li>
+    </ul>           
+  </li>
+  <li id="demo"><a onclick="loadDoc()">Dato curioso</a></li>
+</ul>
+
+<div>
+  <p>A pesar de que actualmente hay más niñas escolarizadas que antes, éstas no sacan el mismo provecho que los niños de la igualdad de oportunidades para completar y beneficiarse plenamente de los estudios que han escogido. Los prejuicios, las normas sociales y las expectativas limitan la calidad de la educación y de las asignaturas que estudian muchas niñas y mujeres. Éstas se encuentran particularmente en franca minoría en las disciplinas de ciencias, tecnología, ingeniería y matemáticas (STEM, por sus siglas en inglés) y, en consecuencia, en las carreras vinculadas a éstas.
+
+Según el informe emblemático de la UNESCO Descifrar las claves: la educación de las mujeres y las niñas en materia de STEM, sólo el 35% de los estudiantes matriculados en las carreras vinculadas a las STEM en la educación superior son mujeres, y se han señalado diferencias en estas disciplinas. Sólo el 3% de las estudiantes de la educación superior, por ejemplo, escogen realizar estudios en el ámbito de las tecnologías de la información y la comunicación (TIC). Estas disparidades de género son tanto más alarmantes cuanto que se considera que, en general, las carreras vinculadas con las STEM constituyen los empleos del futuro, la fuerza motriz de la innovación, del bienestar social, del crecimiento inclusivo y del desarrollo sostenible. La UNESCO presta particular atención a estos aspectos como parte de los esfuerzos que lleva a cabo para promover el empoderamiento de las mujeres y las niñas mediante la educación, y en respuesta a las decisiones adoptadas por sus Estados Miembros en lo tocante a la función que desempeña la Organización en el fomento del liderazgo de las niñas y mujeres en los ámbitos de las STEM, e incluso del arte y el diseño. </p>
+</div>
+
+
+<script type="text/javascript">
+  function MensajeDE() {
+               alert("Al hacer click en este enlace, serás redirigido a una página externa")
+            }
+</script>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "Holi.txt", true);
+  xhttp.send();
+}
+</script>
+
+  <ul class="Options"> 
+    <li><a onclick="MensajeDE()" href="https://mujeresconciencia.com/2017/06/28/veinte-mujeres-inspiradoras-en-carreras-stem/">20 mujeres inspiradoras en carreras STEM</a>
+    <li><a onclick="MensajeDE()" href="http://www.blackgirlscode.com/about-bgc.html">Black Girls Code</a>
+    <li><a onclick="MensajeDE()" href="https://www.womenwhocode.com/">Women who code</a>
+    <li><a onclick="MensajeDE()" href="https://wie.ieee.org/">WIE</a>
+  </ul>
+
+<address>
+  Yoly Guadalupe Santos Vega
+</address>
+        <!--div class='item-fixed'>Se estima que solo el 26% de las personas que trabajan en las áreas STEM son mujeres</div-->
+</body>
+</html>
+

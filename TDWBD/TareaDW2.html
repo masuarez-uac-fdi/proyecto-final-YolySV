@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">  
+    <link href="Styles/TareaDW.css" rel="stylesheet" type="text/css">
+	<title>Niñas STEM en México</title>
+	<style type="text/css">
+      address{
+        font-size: 1em;
+        margin: 1em;
+        text-align: right;
+      	}
+    </style>
+</head>
+
+<body>
+	<h1 style="font-size: 50px;text-align: center";>Mujeres STEM: un reto educativo en México</h1>
+	<h2></h2>
+	<img id="Imagen"></a>
+<script>
+    var imagenes=new Array(
+    	['Images/NiñasPueden.jpg'],
+        ['Images/NiñasSTEM.jpg'],
+        ['Images/STEMpueden.jpg'],
+        ['Images/5Consejos.jpg'],
+    );
+    var contador=0;
+    function cambiarImagenes(){
+        contador++
+        document.getElementById("Imagen").src=imagenes[contador%imagenes.length][0];
+    }
+    onload=function(){
+        cambiarImagenes();
+        setInterval(cambiarImagenes,5000);
+    }
+</script>
+	<h2></h2>
+
+<div>
+  <p>La educación mundial tiene un asunto de la mayor relevancia que atender: la justa participación de las mujeres en las áreas científico-tecnológicas. El reto en México es mayor, dado que la comprensión de lectura y el pensamiento matemático viven una constante lucha contra la ineficiencia. El sistema educativo nacional (SEN), los programas sexenales en la materia, los vicios sindicales y la falta de visión por parte de la sociedad hacen que los prejuicios prevalezcan; a ello se suma una tímida voluntad social de crear los espacios para que las mujeres se interesen y participen en actividades vinculadas con la ciencia y la tecnología.</br>
+
+<strong>Modelo STEM y la brecha de género</br></strong>
+La educación STEM (Science, Technology, Engineering, Mathematics) ha cobrado una relevancia inusitada en los últimos 25 años, lo cual significa que existe en las sociedades una atención particular a la educación, formación y capacitación en estas áreas del conocimiento y desarrollo.</br>
+
+Muchas de las tendencias pedagógicas y didácticas se orientan, de una u otra manera, en este gran marco de referencia tecnológico. Se observa cómo las prácticas metodológicas usan cada vez más y mejor el aprendizaje basado en proyectos, el aprendizaje situado, la clase invertida, el rediseño del aula y las capacidades digitales, por mencionar sólo algunos recursos que robustecen el modelo por competencias.</br>
+
+No obstante, esta tendencia aún está en espera de resultados concretos, especialmente en cuanto a equidad de género en países como México, ya que “de acuerdo a datos referidos por la [Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura] UNESCO, [sólo] el 35% de los investigadores adscritos al Sistema Nacional de Investigadores (SNI) son mujeres. Y [apenas] el 24.5% de [los miembros de] la Academia Mexicana de Ciencias son mujeres” (Jiménez, 2017).</br>
+
+Cabe señalar que el número de estudiantes femeninas que entra a carreras de ciencias y tecnología es bajo. La situación, como sabemos, constituye un problema cultural, idiosincrático y educativo: las familias, las comunidades, las instituciones no hacen énfasis suficiente en las capacidades de las mujeres para destacar en dichas áreas.</br>
+
+<strong>¿Se está haciendo algo para cerrar esta brecha?</br></strong>
+De acuerdo con la Organización para la Cooperación y el Desarrollo Económicos (OECD, por sus siglas en inglés; 2016), en el futuro inmediato las tecnologías emergentes como el internet de las cosas, la nanotecnología, el análisis de datos, la inteligencia artificial y la casi total automatización de las actividades sociales, modificarán radicalmente la manera de vivir, trabajar y estudiar; por lo que se demandarán profesionistas en disciplinas aún no creadas, que dependerán en gran medida de disciplinas como matemáticas, física, química, biología y otras ciencias. Por lo tanto, es del interés de escuelas e industria tener un plan de ruta para transitar, de la mejor manera, a una sociedad digital.</br>
+</p>
+</div>
+
+  <ul class="Options"> 
+    <li><strong>Mentorías.</br></strong> Elegir una carrera técnico-universitaria exige información previa. Las jóvenes necesitan referentes que las ayuden a tomar la mejor decisión y las alienten a desarrollar sus habilidades cognitivas y socioemocionales (Kesty, 2019) para participar en un entorno laboral predominantemente masculino. La iniciativa “Mujeres en STEM, futuras líderes, es el primer y único programa de mentoría o tutoría en México para las áreas de ciencia, tecnología, ingeniería y matemáticas”, creado por Rebeca Vargas, directora ejecutiva de la Fundación US-Mexico (López, 2018).</br>
+    
+    <li><strong>Talleres focalizados.</br></strong> Asociaciones y empresas promotoras del modelo STEM que convocan a la sociedad a apoyar la creciente participación de niñas y jóvenes en actividades científicas[1], a través de actos como la celebración del “Día internacional de la mujer y la niña en la ciencia”, del pasado 11 de febrero. En la edición anterior, el movimiento STEM organizó el evento “Un viaje por el Cosmos”, para que las participantes salvasen a la Tierra tras cumplir con una serie de misiones.</br>
+    
+    <li><strong>Campañas de promoción del modelo STEM desde el hogar.</br></strong>Una forma importante de apoyar la solución del problema es ayudar a los padres de familia a evitar los estereotipos de género y promover un ambiente de interés por la ciencia y la tecnología, sin distinción entre niños y niñas. El elemento crucial es la detección temprana de las habilidades de las y los menores y el fortalecimiento de actividades de reflexión.</br>
+    
+    <li><strong>Políticas públicas incluyentes.</br></strong> Las autoridades educativas deben difundir la importancia de la ciencia y la tecnología en los ámbitos académico, social y económico, y valorar el talento de las personas. La Secretaría de Educación Pública (SEP) lanzó Niñas STEM pueden, que busca “promover en niñas y adolescentes el convencimiento de que son capaces de emprender carreras exitosas en ciencias, tecnología, ingenierías, y matemáticas” (SEP, 2019).</br>
+  </ul>
+
+</body>
+</html>

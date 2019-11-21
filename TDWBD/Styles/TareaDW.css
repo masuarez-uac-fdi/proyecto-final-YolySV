@@ -1,0 +1,136 @@
+html{
+	font-size: 15px;
+  	font-family: 'Courgette', cursive;
+  	background-color: #85079B;
+}
+p{
+  	font-size: 1.3em;
+  	line-height: 2;
+  	letter-spacing: 1;
+  	text-align: justify;
+  	margin: 1.5em;
+}
+
+li{
+  	font-size: 1.3em;
+  	line-height: 2;
+  	letter-spacing: 1;
+
+}
+
+body{
+	background-color: white;
+	border: 0.3em solid black;
+}
+
+h1{
+	margin: 0;
+	padding: 20px 0;
+	color: #28B70E;
+	text-shadow: 3px 3px 1px black;
+}
+
+h2{
+	color:white;
+	text-decoration: overline underline;
+	background: #28B70E;
+  margin: 0.5em 0;
+  padding: 0.3em;
+  border-right: 1em solid red
+	writing-mode: horizontal-tb;
+}
+
+img {
+    display: block;
+  	margin: auto;
+  	width: 95%;
+  	height: 95%;
+  	border-style: double;
+  	border-width: 0.7em;
+    position: static;
+}
+
+ul.Options {
+  	list-style-type: none;
+    margin: 2em;
+    }
+
+ul.Options li {
+	background:none;
+    margin: 2em 0;
+    border-right: 1em solid green;
+    border-left: 1em solid green; 
+    border-style: double;
+    text-align: center;
+}
+
+ul.navbar
+      a:link{color: blue}
+      a:visited{color: purple}
+
+div{
+	border-style: dotted;
+	margin: 1em;
+	border-color: purple;
+}
+
+ul.menu {
+  margin-top: 15px;
+  font-size: 1em;
+}
+
+.menu > li {
+  display: inline;
+  margin-right: 50px;
+}
+
+.menu > li:last-of-type {
+  margin-right: 0;
+}
+
+.dropdown:hover .features-menu {
+  display: flex;
+  flex-direction: column;
+  background: #B2D6FF;
+  border-radius: 5px;
+  padding-top: 60px;
+  position: absolute; 
+  top: -25px;
+  left: -30px;
+}
+
+.features-menu li {
+  list-style: none;
+  border-bottom: 1px solid #FFF;
+
+  padding: 0 40px 10px 20px;
+  margin: 10px;
+}
+
+.features-menu li:last-of-type {
+  border-bottom: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown > span {
+  z-index: 2;
+  position: relative; 
+  cursor: pointer;
+}
+
+.features-menu {
+  z-index: 1;
+  display: none;
+}
+
+.item-fixed {
+  width: 10em;
+  height: 7em;
+  background-color: #C0F289;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
