@@ -16,6 +16,8 @@
 </head>
 
 <body>
+    <p id="demo"></p>
+
 	<h1 style="font-size: 50px;text-align: center">Nuestros datos</h1>
 	<h2></h2>
     <h3 align="center">¡Ayúdanos a recaudar datos!</h3>
@@ -83,6 +85,7 @@
             <tr>
                 <td align="center">
                 <input type="submit" size="15" value="Actualizar"></td>
+                <label id="txtHint2" size="15"></td>
             </tr>
         </table></br>
     </form>
@@ -102,12 +105,12 @@
 
     <script>
     function showData(str) {
-      var xhttp;  
+       
+      var xhttp = new XMLHttpRequest();
       if (str == "") {
         document.getElementById("txtHint").innerHTML = "";
         return;
       }
-      xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
           document.getElementById("txtHint").innerHTML = this.responseText;
@@ -117,7 +120,7 @@
       xhttp.send();
     }
     </script>
-
     <h2></h2>
+
 </body>
 </html>

@@ -1,0 +1,9 @@
+{
+    "Nombre":"Yoly Guadalupe Santos Vega",
+    "Edad":20,
+    "Info":[
+        { "Carrera":"ITS" },
+        { "Semestre":"Quinto" },
+        { "Grupo":"A" }
+    ]
+}

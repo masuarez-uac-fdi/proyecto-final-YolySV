@@ -40,6 +40,18 @@
   <li id="demo"><a onclick="loadDoc()">Dato curioso</a></li>
 </ul>
 
+<script>
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var myObj = JSON.parse(this.responseText);
+    document.getElementById("json").innerHTML = myObj.Nombre;
+  }
+};
+xmlhttp.open("GET", "Us.txt", true);
+xmlhttp.send();
+</script>
+
 <div>
   <p>A pesar de que actualmente hay más niñas escolarizadas que antes, éstas no sacan el mismo provecho que los niños de la igualdad de oportunidades para completar y beneficiarse plenamente de los estudios que han escogido. Los prejuicios, las normas sociales y las expectativas limitan la calidad de la educación y de las asignaturas que estudian muchas niñas y mujeres. Éstas se encuentran particularmente en franca minoría en las disciplinas de ciencias, tecnología, ingeniería y matemáticas (STEM, por sus siglas en inglés) y, en consecuencia, en las carreras vinculadas a éstas.
 
@@ -67,6 +79,7 @@ function loadDoc() {
 }
 </script>
 
+
   <ul class="Options"> 
     <li><a onclick="MensajeDE()" href="https://mujeresconciencia.com/2017/06/28/veinte-mujeres-inspiradoras-en-carreras-stem/">20 mujeres inspiradoras en carreras STEM</a>
     <li><a onclick="MensajeDE()" href="http://www.blackgirlscode.com/about-bgc.html">Black Girls Code</a>
@@ -74,10 +87,8 @@ function loadDoc() {
     <li><a onclick="MensajeDE()" href="https://wie.ieee.org/">WIE</a>
   </ul>
 
-<address>
-  Yoly Guadalupe Santos Vega
-</address>
-        <!--div class='item-fixed'>Se estima que solo el 26% de las personas que trabajan en las áreas STEM son mujeres</div-->
+<p align="left"><a href="Us.txt" target="_blank">Aquí</a> un poco de información extra de la creadora de la página </p>
+<address id=json></address>
 </body>
 </html>
 

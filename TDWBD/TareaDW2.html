@@ -12,6 +12,14 @@
         text-align: right;
       	}
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("button").click(function(){
+        $("#div1").load("Hola.txt");
+  });
+});
+</script>
 </head>
 
 <body>
@@ -63,6 +71,8 @@ De acuerdo con la Organización para la Cooperación y el Desarrollo Económicos
     
     <li><strong>Políticas públicas incluyentes.</br></strong> Las autoridades educativas deben difundir la importancia de la ciencia y la tecnología en los ámbitos académico, social y económico, y valorar el talento de las personas. La Secretaría de Educación Pública (SEP) lanzó Niñas STEM pueden, que busca “promover en niñas y adolescentes el convencimiento de que son capaces de emprender carreras exitosas en ciencias, tecnología, ingenierías, y matemáticas” (SEP, 2019).</br>
   </ul>
+
+<div id="div1"><h3>¡Buenas noticias! Presiona el botón para leerlas</h3><button>¡Aquí!</button></div>
 
 </body>
 </html>
